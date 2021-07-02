@@ -1,26 +1,75 @@
 <html>
 <head>
 <title>Piro Amilo</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
         * {
             margin: 0;
             padding: 0;
+            background-color: #9fd8ef;
         }
         .imgbox {
             display: grid;
-            height: 100%;
-            background-color: #9fd8ef;
+            height: 85%;
         }
         .center-fit {
             max-width: 100%;
             max-height: 100vh;
             margin: auto;
         }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            width: 70px;
+            height: 70px;
+            margin: 20px;
+            outline: none;
+            border: none;
+            box-shadow: 5px 5px 10px #b6a9a9, -5px -5px 10px #9fd8ef;
+            border-radius: 50%;
+            transition: 0.2;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            animation-name: pulse;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes pulse {
+            from {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.21);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+
     </style>
 </head>
 <body>
 <div class="imgbox">
     <img class="center-fit" src="./piro_amilo.png">
+</div>
+<div class="center">
+  <button class="btn">
+    <a href="https://www.facebook.com/Piro-Amilo-100455372312766">
+      <i class="fa fa-facebook" style="font-size:45px;"></i>
+    </a>
+  </button>
+  <button class="btn">
+    <a href="https://www.instagram.com/piro_amilo/">
+      <i class="fa fa-instagram" style="font-size:45px;"></i>
+    </a>
+  </button>
 </div>
 </body>
 </html>
